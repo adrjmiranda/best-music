@@ -1,1 +1,13 @@
 @import '../../sass/base.scss';
+
+.about {
+	position: relative;
+	background-image: linear-gradient(
+		to right,
+		$magenta_rose,
+		$coral_pink,
+		$rust_red
+	);
+	padding: 450px 0;
+	margin-top: 300px;
+}
