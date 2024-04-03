@@ -1,0 +1,17 @@
+@import './elements';
+@import './variables';
+
+* {
+	margin: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	font-family: $ubuntu;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
