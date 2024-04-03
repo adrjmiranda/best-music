@@ -1,0 +1,28 @@
+@import '../../sass/base.scss';
+
+.button {
+	border: none;
+	background-image: linear-gradient(
+		to right,
+		$plum_purple,
+		$deep_purple,
+		$midnight_black
+	);
+	cursor: pointer;
+	color: $snow_white;
+	text-transform: capitalize;
+	font-size: 1.2rem;
+	padding: 1rem 2rem;
+	max-width: fit-content;
+	border-radius: $br_medium;
+	transition: $tr_medium;
+}
+
+.button:hover {
+	background-image: linear-gradient(
+		to left,
+		$plum_purple,
+		$deep_purple,
+		$midnight_black
+	);
+}
