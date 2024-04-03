@@ -1,1 +1,12 @@
 @import '../../sass/base.scss';
+
+.header {
+	background-image: linear-gradient(
+		to right,
+		$magenta_rose,
+		$coral_pink,
+		$rust_red
+	);
+	min-height: 90vh;
+	position: relative;
+}

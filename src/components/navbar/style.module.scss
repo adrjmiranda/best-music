@@ -1,1 +1,35 @@
 @import '../../sass/base.scss';
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 1rem;
+
+	.logo {
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		gap: 0.8rem;
+
+		img {
+			height: 50px;
+		}
+
+		span {
+			color: $flame_orange;
+			font-size: 2rem;
+			font-family: $titan_one;
+			text-shadow: 1px 1px 0 $rust_red, -1px -1px 0 $rust_red;
+		}
+	}
+
+	.menu {
+		z-index: 1;
+
+		ul {
+			display: flex;
+			gap: 1rem;
+		}
+	}
+}

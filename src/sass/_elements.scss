@@ -1,0 +1,22 @@
+@import './variables';
+
+.wrapper {
+	width: 100vw;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.btn {
+	border: $bw_medium solid $snow_white;
+	padding: 0.5rem 1rem;
+	border-radius: $br_medium;
+	color: $snow_white;
+	font-weight: $fw_large;
+	transition: $tr_small;
+	text-transform: capitalize;
+}
+
+.btn:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
