@@ -1,1 +1,33 @@
 @import '../../sass/base.scss';
+
+.footer {
+	margin-top: 350px;
+	background-image: linear-gradient(
+		to right,
+		$deep_purple,
+		$berry_pink,
+		$deep_purple
+	);
+	padding: 80px 0;
+	position: relative;
+
+	.content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 3rem;
+
+		.download {
+			z-index: 1;
+			display: flex;
+			gap: 2rem;
+			align-items: center;
+		}
+
+		p {
+			color: $snow_white;
+			font-weight: $fw_small;
+		}
+	}
+}

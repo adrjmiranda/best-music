@@ -8,6 +8,15 @@
 	font-family: $ubuntu;
 }
 
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	position: relative;
+}
+
 a {
 	text-decoration: none;
 }
