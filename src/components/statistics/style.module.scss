@@ -1,1 +1,74 @@
 @import '../../sass/base.scss';
+
+.statistics {
+	position: absolute;
+	z-index: 1;
+	bottom: -250px;
+
+	.content {
+		background-color: $snow_white;
+		display: flex;
+		padding: 2rem;
+		gap: 3rem;
+		align-items: center;
+		border-radius: $br_large;
+		box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.1);
+
+		.info {
+			flex: 50%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+
+			h3 {
+				font-size: 3rem;
+				font-family: $titan_one;
+				color: $deep_purple;
+				text-transform: capitalize;
+			}
+
+			p {
+				font-size: 1.15rem;
+				font-weight: $fw_normal;
+				line-height: 1.5;
+				color: $midnight_black;
+				// text-align: justify;
+			}
+
+			ul {
+				display: flex;
+				gap: 1.5rem;
+
+				li {
+					color: $deep_purple;
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					gap: 0.5rem;
+
+					span {
+						&:nth-child(1) {
+							font-weight: $fw_large;
+							font-size: 1.3rem;
+						}
+
+						&:nth-child(2) {
+							font-size: 1.1rem;
+						}
+					}
+				}
+			}
+		}
+
+		.img {
+			flex: 50%;
+			display: flex;
+			justify-content: center;
+
+			img {
+				height: 450px;
+			}
+		}
+	}
+}
