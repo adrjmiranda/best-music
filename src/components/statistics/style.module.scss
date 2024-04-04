@@ -1,9 +1,8 @@
 @import '../../sass/base.scss';
 
 .statistics {
-	position: absolute;
+	position: relative;
 	z-index: 1;
-	bottom: -250px;
 
 	.content {
 		background-color: $snow_white;
@@ -67,6 +66,19 @@
 
 			img {
 				height: 450px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1080px) {
+		.content {
+			flex-direction: column;
+
+			.img {
+				img {
+					max-width: 100%;
+					height: auto;
+				}
 			}
 		}
 	}

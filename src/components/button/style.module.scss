@@ -16,13 +16,18 @@
 	max-width: fit-content;
 	border-radius: $br_medium;
 	transition: $tr_medium;
-}
 
-.button:hover {
-	background-image: linear-gradient(
-		to left,
-		$plum_purple,
-		$deep_purple,
-		$midnight_black
-	);
+	&:hover {
+		background-image: linear-gradient(
+			to left,
+			$plum_purple,
+			$deep_purple,
+			$midnight_black
+		);
+	}
+
+	@media screen and (max-width: 1080px) {
+		width: 100%;
+		max-width: none;
+	}
 }

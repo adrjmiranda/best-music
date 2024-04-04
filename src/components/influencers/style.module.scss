@@ -1,8 +1,7 @@
 @import '../../sass/base.scss';
 
 .influencers {
-	position: absolute;
-	top: -15rem;
+	position: relative;
 
 	h2 {
 		font-size: 2.5rem;
@@ -19,5 +18,11 @@
 		align-items: center;
 		justify-content: center;
 		gap: 3rem;
+	}
+
+	@media screen and (max-width: 1080px) {
+		.content {
+			flex-direction: column;
+		}
 	}
 }

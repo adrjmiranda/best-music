@@ -1,7 +1,7 @@
 @import '../../sass/base.scss';
 
 .footer {
-	margin-top: 350px;
+	margin-top: 200px;
 	background-image: linear-gradient(
 		to right,
 		$deep_purple,
@@ -28,6 +28,16 @@
 		p {
 			color: $snow_white;
 			font-weight: $fw_small;
+			text-align: center;
+		}
+	}
+
+	@media screen and (max-width: 576px) {
+		.content {
+			.download {
+				width: 100%;
+				flex-direction: column;
+			}
 		}
 	}
 }

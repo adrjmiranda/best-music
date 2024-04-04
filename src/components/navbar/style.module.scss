@@ -31,4 +31,17 @@
 			gap: 1rem;
 		}
 	}
+
+	@media screen and (max-width: 576px) {
+		flex-direction: column;
+		gap: 3rem;
+
+		.menu {
+			width: 100%;
+
+			ul {
+				flex-direction: column;
+			}
+		}
+	}
 }
