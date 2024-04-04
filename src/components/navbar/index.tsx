@@ -1,5 +1,8 @@
 import { FunctionComponent, ReactNode } from 'react';
 
+// Animation
+import { motion } from 'framer-motion';
+
 // Style
 import style from './style.module.scss';
 
@@ -10,7 +13,14 @@ const Navbar: FunctionComponent = (): ReactNode => {
 	return (
 		<nav className={style.navbar}>
 			<a href='#' className={style.logo}>
-				<img src={Logo} alt='Logo' />
+				<motion.img
+					whileHover={{
+						rotate: ['-45deg', 0, '45deg', 0],
+					}}
+					transition={{ duration: 0.3 }}
+					src={Logo}
+					alt='Logo'
+				/>
 				<span>Best Music</span>
 			</a>
 			<div className={style.menu}>
